@@ -17,17 +17,6 @@
     }
 }
 
-@keyframes slideUp {
-  from {
-    transform: translateY(100%); /* Start completely off-screen below */
-    opacity: 0;                        /* Optional: fade in simultaneously */
-  }
-  to {
-    transform: translate(25%, 0);     /* End at normal position */
-    opacity: 1;
-  }
-}
-
 .art {
     /* position: absolute; */
     /* top: 0; */
