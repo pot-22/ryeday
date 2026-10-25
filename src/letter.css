@@ -1,0 +1,48 @@
+.paper {
+    /* position: absolute; */
+    /* position: fixed; */
+    background-color: #e0e0e0;
+    background-image:
+    repeating-linear-gradient(0deg, rgba(124,111,255,0.30) 0px, rgba(124,111,255,0.30) 2px, transparent 2px, transparent 20px);
+    max-width: 70%;
+    text-align: left;
+    padding: 50px 10px 20px 30px;
+    margin: 0 auto;
+    
+    /* transform: translateY(100%); */
+    /* animation: slideUp 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards; */
+
+    p {
+        color: black;
+    }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%); /* Start completely off-screen below */
+    opacity: 0;                        /* Optional: fade in simultaneously */
+  }
+  to {
+    transform: translate(25%, 0);     /* End at normal position */
+    opacity: 1;
+  }
+}
+
+.art {
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: lightgray;
+    padding: 40px 20px 90px 20px;
+    transform: rotate(-5deg);
+    transition: transform 0.7s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: rotate(5deg);
+    }
+}
